@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Main Styling */
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+/* Utilities */
+
+.text-primary {
+    color: #ac1818;
+}
+
+/* Navbar Styling */
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 0.3rem;
+}
+
+#navbar .logo {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+#navbar ul {
+    display: flex;
+    align-content: center;
+    list-style: none;
+}
+
+#navbar ul li {
+    padding: 0.3rem 0.5rem;
+}
+
+#navbar ul li a {
+    color: #fff;
+}

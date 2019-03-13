@@ -1,3 +1,4 @@
+/* Resets */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,19 +6,62 @@
 }
 
 /* Main Styling */
+html, body {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.4;
+}
+
 a {
     text-decoration: none;
 }
 
 p {
     margin: 0.75rem 0;
+    line-height: 1.75rem;
 }
 
 /* Utilities */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
 
 .text-primary {
     color: #ac1818;
 }
+
+.text-center {
+    text-align: center;
+}
+
+.large-heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    margin-bottom: .5rem;
+}
+
+.medium-heading {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn {
+    color: #fff;
+    background: #444;
+    padding: .75rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn:hover {
+    color: #ac1818;
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
 
 /* Navbar Styling */
 #navbar {
@@ -29,6 +73,7 @@ p {
     justify-content: space-between;
     z-index: 1;
     padding: 0.3rem;
+    opacity: .9;
 }
 
 #navbar .logo {
@@ -38,14 +83,64 @@ p {
 
 #navbar ul {
     display: flex;
-    align-content: center;
+    align-items: center;
     list-style: none;
-}
-
-#navbar ul li {
-    padding: 0.3rem 0.5rem;
 }
 
 #navbar ul li a {
     color: #fff;
+    padding: 0.65rem;
+}
+
+#navbar ul li a:hover {
+    background: #444;
+    border-radius: 3px;
+}
+
+/* Showcase */
+#showcase {
+    background: #333 url('../img/showcase.jpg')
+    no-repeat center center/cover;
+    height: 100vh;
+    margin-top: -2.8rem;
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    /* Overlay - position: absolute to cover entire showcase */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#showcase p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Services */
+#services .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#services .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#services .items .item i {
+    color: #ac1818;
+    margin-bottom: 0.5rem;
 }

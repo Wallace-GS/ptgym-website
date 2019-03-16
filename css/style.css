@@ -9,6 +9,7 @@
 html, body {
     font-family: 'Roboto Slab', serif;
     line-height: 1.4;
+    background: #f4f4f4;
 }
 
 a {
@@ -59,16 +60,36 @@ p {
     color: #ac1818;
 }
 
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
+.navbar-clr {
+    padding: 1.35rem 0;
+}
+
+/* Padding Y-axis */
 .py-1 { padding: 1.5rem 0; }
 .py-2 { padding: 2rem 0; }
 .py-3 { padding: 3rem 0; }
+
+/* Padding All Around */
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
 
 /* Navbar Styling */
 #navbar {
     display: flex;
     position: sticky;
     top: 0;
-    background: #333;
+    background: #222;
     color: #fff;
     justify-content: space-between;
     z-index: 1;
@@ -79,6 +100,7 @@ p {
 #navbar .logo {
     font-family: 'Permanent Marker', cursive;
     color: white;
+    padding: 0 0.8rem;
 }
 
 #navbar ul {
@@ -101,6 +123,7 @@ p {
 #showcase {
     background: #333 url('../img/showcase.jpg')
     no-repeat center center/cover;
+    background-attachment: fixed;
     height: 100vh;
     margin-top: -2.8rem;
     color: #fff;
@@ -124,23 +147,89 @@ p {
 }
 
 #showcase p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 2rem;
 }
 
 /* Services */
-#services .items {
+#services .services-items {
     display: flex;
     padding: 1rem;
 }
 
-#services .item {
+#services .services-item {
     flex: 1;
     text-align: center;
     padding: 1rem;
 }
 
-#services .items .item i {
+#services .services-items .services-item i {
     color: #ac1818;
     margin-bottom: 0.5rem;
+}
+
+/* Trainers */
+#trainers {
+    display: flex;
+    background: #333;
+    color: #fff;
+}
+
+#trainers div {
+    flex: 1;
+}
+
+#trainers .trainers-img {
+    background: url('../img/trainer.jpg')
+    no-repeat center center/cover;
+}
+
+/* Testimonials */
+#testimonials {
+    background: #f4f4f4 url('../img/bg2.jpg')
+    no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#testimonials .testimonials-overlay {
+    width: 100%;
+    height: 100%; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#testimonials h2 {
+    color: #fff;
+}
+
+#testimonials .container {
+    padding-top: 6rem;
+} 
+
+#testimonials img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+#testimonials .testimonials-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#testimonials .testimonials-items
+.testimonials-item {
+    display: flex;
+    background: #fff;
+    margin: 1rem 0;
+    border-radius: 15px;
+    opacity: .9;
 }

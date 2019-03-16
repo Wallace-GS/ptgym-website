@@ -26,8 +26,8 @@
         </h1>
         <ul>
             <li><a href="#showcase">Home</a></li>
-            <li><a href="#services-section">Services</a></li>
-            <li><a href="#trainers-section">Trainers</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#trainers">Trainers</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -46,8 +46,6 @@
             </div>
         </div>
     </header>
-
-    <div id="services-section" class="navbar-clr"></div>
 
     <section id="services" class="bg-light py-1">
         <div class="container">
@@ -88,8 +86,6 @@
             </div>
         </div>
     </section>
-
-    <div id="trainers-section" class="navbar-clr"></div>
 
     <section id="trainers">
         <div class="trainers-img"></div>
@@ -152,6 +148,47 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="contact-form p-2">
+            <h2 class="medium-heading text-center">
+                <span class="text-primary">Contact</span> Us
+            </h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn">
+            </form>
+            </h2>
+        </div>
+        <div class="map"></div>
+    </section>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzPVSUBhKhqkcKUTHB_lZk4MdcmABbhEc&callback=initMap"
+    async defer></script>
+
+    <footer id="main-footer" class="text-center">
+        <p>Copyright &copy; 2019, PTGym, All Rights Reserved</p>
+    </footer>
+
 </body>
 
 </html>
+
+

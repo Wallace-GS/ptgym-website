@@ -1,3 +1,7 @@
+.btn:hover {
+    color: #fff;
+}
+
 #navbar {
 	flex-direction: column;
 	align-items: center;
@@ -12,13 +16,22 @@
 	padding: 0.5rem;
 }
 
+#navbar ul li a:hover {
+	background: #222;
+	border-radius: 0;
+}
+
 #showcase {
-    background: #333 url("../img/showcase-m.jpg") no-repeat center center/cover;
+	background: #333 url("../img/showcase-m.jpg") no-repeat center center/cover;
     margin-top: -5rem;
 }
 
 #showcase .showcase-content {
-    background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#showcase .showcase-content h2 {
+    font-family: "Times New Roman", Times, serif !important;
 }
 
 #services .services-items {

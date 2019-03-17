@@ -15,6 +15,9 @@
 #showcase {
     margin-top: -5rem;
 }
+#services {
+    margin-top: 2rem;
+}
 
 #services .services-items {
     flex-direction: column;

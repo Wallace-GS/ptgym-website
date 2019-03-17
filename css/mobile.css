@@ -17,6 +17,10 @@
     margin-top: -5rem;
 }
 
+#showcase .showcase-content {
+    background-color: rgba(0, 0, 0, 0);
+}
+
 #services .services-items {
 	flex-direction: column;
 }

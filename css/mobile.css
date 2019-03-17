@@ -14,9 +14,11 @@
 
 #showcase {
     margin-top: -5rem;
+    margin-bottom: -4rem;
 }
+
 #services {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 #services .services-items {
